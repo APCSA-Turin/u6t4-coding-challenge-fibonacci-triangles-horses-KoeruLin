@@ -18,7 +18,7 @@ public class TestHorseBarn{
         Horse h3 = new Horse("Cathy", 1300);
         Horse[] horses = {h1, h2, null, h3};
         HorseBarn barn2 = new HorseBarn(horses);
-        Horse[] horses2 = barn2.getStalls();
+        Horse[] horses2 = barn2.getStalls(); 
         assertArrayEquals(horses,horses2, "getStalls() did not return {abe,barb,null,cathy}");
     }
 
